@@ -1,8 +1,11 @@
-import { render, screen } from '@testing-library/react';
-import App from './components/App';
+import { cleanup, render } from "@testing-library/react";
+import App from "../components/App";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const title = screen.getByText(/SFC/i);
-  expect(title).toBeInTheDocument();
+
+afterEach(cleanup)
+
+it("Should take a snapshot", () => {
+  const {asFragment} = render(<App />);
+  
+  expect(asFragment(<App />)).toMatchSnapshot()
 });
