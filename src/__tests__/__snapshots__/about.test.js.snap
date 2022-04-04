@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should show about the team on the page 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <h1>
+      SFC
+    </h1>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Should take a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <h1>
+      SFC
+    </h1>
+  </div>
+</DocumentFragment>
+`;
