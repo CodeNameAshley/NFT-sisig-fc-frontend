@@ -8,3 +8,10 @@ it("Should show about the team on the page", () => {
   
   expect(title).toBeInTheDocument()
 });
+
+it("Should have a description on the page", () => {
+  const { getByText } = render(<About />)
+  const description = getByText(/Placeholder description/)
+
+  expect(description).toBeInTheDocument()
+})
